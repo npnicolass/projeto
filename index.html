@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas sobre Vivian</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="music-player-vibe" data-aos="fade-left">
+        <div class="player-content">
+            <div class="vinyl-record">
+                <img src="./img/foto2.jpeg" alt="Vivian" id="vinylThumb">
+            </div>
+            <div class="track-details">
+                <span class="now-playing">Trilha Sonora de:</span>
+                <span class="target-name">Vivian</span>
+            </div>
+            <button id="playBtn" class="main-play-btn" onclick="toggleMusic()">
+                <i id="playIcon" class="fas fa-play"></i>
+            </button>
+        </div>
+        <audio id="audioTrack" loop src="musica.mp3"></audio>
+    </div>
+
+    <header class="hero-section">
+        <div class="hero-image-wrapper">
+            <img src="./img/principal.jpeg" alt="Vivian" class="hero-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="zoom-out">
+            <span class="hero-tag">A ARTE DE SER</span>
+            <h1 class="main-title">Vivian</h1>
+            <p class="hero-desc">Um pouco de uma menina muito legal e bonita.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="praise-section" data-aos="fade-up">
+            <div class="praise-container">
+                <span class="gold-text">A raridade em pessoa</span>
+                <p class="praise-text">
+                   Te conheço há pouco tempo, mas esse singelo presente é para tentar te tirar um sorriso nesse início de ano, e te dizer o quanto você é uma menina incrível. 2026 vai ser melhor ainda!
+                </p>
+                <div class="praise-divider"></div>
+            </div>
+        </section>
+
+        <section class="photo-journal">
+            <div class="bento-grid">
+                <div class="bento-item tall" data-aos="fade-up"><img src="./img/foto1.jpeg" alt="Vivian 1"></div>
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="100"><img src="./img/foto2.jpeg" alt="Vivian 2"></div>
+                <div class="bento-item wide" data-aos="fade-up" data-aos-delay="200"><img src="./img/foto3.jpeg" alt="Vivian 3"></div>
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="300"><img src="./img/foto4.jpeg" alt="Vivian 4"></div>
+                <div class="bento-item tall" data-aos="fade-up" data-aos-delay="400"><img src="./img/foto5.png" alt="Vivian 5"></div>
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="500"><img src="./img/foto6.png" alt="Vivian 6"></div>
+            </div>
+        </section>
+
+        <section class="personal-narrative" data-aos="fade-up">
+            <div class="narrative-content glass">
+                <div class="glow-sphere"></div>
+                
+                <div class="narrative-header">
+                    <span class="narrative-subtitle">Um pouco mais sobre você</span>
+                    <h2 class="narrative-title">Seus Gostos</h2>
+                </div>
+
+                <div class="narrative-body">
+                    <p class="main-text">
+                        Quem convive com você, Vivian, percebe logo que você é uma mistura de vários mundos. É como se a coragem do 
+                        <span class="universe-tag hp">Harry Potter</span>, a grandiosidade de 
+                        <span class="universe-tag lotr">Senhor dos Anéis</span> e a energia do 
+                        <span class="universe-tag pj">Percy Jackson</span> estivessem todas juntas em você.
+                    </p>
+
+                    <div class="special-feature-card" data-aos="zoom-in">
+                        <div class="bunny-icon-wrapper">
+                            <i class="fas fa-rabbit"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>O Fofuxo</h3>
+                            <p>E claro, entre essas histórias todas, tem o seu coelhinho. Ele traz aquela calmaria que equilibra o seu dia e deixa tudo mais leve.</p>
+                        </div>
+                    </div>
+
+                    <div class="divider-line"></div>
+
+                    <p class="secondary-text">
+                        Acho incrível como você tem o foco de quem não desiste por nada, tipo o <span class="universe-tag naruto">Naruto</span>, 
+                        e essa vontade de ser livre que lembra muito o pessoal de <span class="universe-tag op">One Piece</span>.
+                    </p>
+                </div>
+
+                <div class="narrative-footer">
+                    <p>Uma mistura rara de magia, força e uma lealdade que a gente não encontra em qualquer lugar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pirate-map-section" data-aos="zoom-in">
+            <div class="map-container">
+                <div class="compass-rose"><i class="fas fa-compass"></i></div>
+                <div class="quote-wrapper-pirate">
+                    <h2 class="epic-quote-pirate">
+                        "Até o <span class="highlight-luffy">Luffy</span> levaria mais de mil episódios para navegar toda a sua essência, e mesmo o <span class="highlight-law">Law</span>, com seu 'Room', não seria capaz de mapear o tamanho do seu coração."
+                    </h2>
+                    <div class="map-footer">
+                        <span>Tesouro encontrado: Vivian</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="final-tribute">
+            <div class="footer-visual-nodes"></div>
+            <div class="container-final">
+                <div class="final-header-box" data-aos="fade-up">
+                    <span class="final-top-tag">2026</span>
+                    <h2 class="final-main-title">Onde a jornada começa</h2>
+                    <div class="custom-line"></div>
+                </div>
+
+                <div class="final-signature-card" data-aos="zoom-in-up" data-aos-delay="300">
+                    <p class="final-dedication-text">Feito com toda a admiração do mundo</p>
+                    <div class="names-wrapper">
+                        <span class="to-text">Para</span>
+                        <h3 class="vivian-name">Vivian</h3>
+                    </div>
+                    <div class="nicolas-signature">
+                        <p>Com grande carinho,</p>
+                        <h4>Nicolas</h4>
+                    </div>
+                    <div class="final-heart-zone">
+                        <i class="fas fa-heart beat"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Inicialização do AOS (Animate on Scroll)
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+</body>
+</html>
